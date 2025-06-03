@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>second_project</name>
+  <version>0.0.1</version>
+  <description>Task-1 mapping package (GMapping) for the second robotics project.</description>
+
+  <maintainer email="aleksa.mirkovic@mail.polimi.it">Aleksa Mirkovic</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- run-time / build dependencies -->
+  <depend>roscpp</depend>
+  <depend>tf2_ros</depend>
+  <depend>nav_msgs</depend>
+
+  <!-- external tools installed via apt (not compiled here) -->
+  <exec_depend>ira_laser_tools</exec_depend>
+  <exec_depend>laser_filters</exec_depend>
+  <exec_depend>gmapping</exec_depend>
+
+  <export/>
+</package>
