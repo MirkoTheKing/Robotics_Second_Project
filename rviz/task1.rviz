@@ -1,0 +1,41 @@
+Panels:
+  - Class: rviz/Displays
+  - Class: rviz/Selection
+  - Class: rviz/Views
+
+Visualization Manager:
+  Name: root
+  Class: ""
+
+  Global Options:
+    Fixed Frame: "map"
+    Background Color: [0.1, 0.1, 0.1]
+
+  Displays:
+    - Name: "TF"
+      Class: "rviz/TF"
+      Enabled: true
+      Show Axes: true
+      Frame Style: "Arrow"
+      Marker Scale: 0.05
+      Show Names: false
+
+    - Name: "Map"
+      Class: "rviz/Map"
+      Enabled: true
+      Topic: "/map"
+      Queue Size: 10
+      Color Scheme: "map"
+      Alpha: 0.7
+
+    - Name: "LaserScan (Combined)"
+      Class: "rviz/LaserScan"
+      Enabled: true
+      Topic: "/scan_combined"
+      Color:
+        R: 0.0
+        G: 1.0
+        B: 0.0
+        A: 1.0
+      Size (m): 0.05
+      Decay Time (s): 0.0

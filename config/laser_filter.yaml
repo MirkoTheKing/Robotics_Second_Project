@@ -1,8 +1,0 @@
-scan_filter_chain:
-- name: close_range
-  type: laser_filters/LaserScanRangeFilter   # <── corrected line
-  params:
-    lower_threshold: 0.20          # ignore hits closer than 20 cm
-    upper_threshold: 30.0
-    lower_replacement_value: .nan
-    upper_replacement_value: .nan

@@ -2,22 +2,31 @@
 <package format="2">
   <name>second_project</name>
   <version>0.0.1</version>
-  <description>Task-1 mapping package (GMapping) for the second robotics project.</description>
+  <description>Task 1: generate 360° laser, broadcast odom→TF, run gmapping</description>
 
   <maintainer email="aleksa.mirkovic@mail.polimi.it">Aleksa Mirkovic</maintainer>
   <license>BSD</license>
 
+  <!-- Buildtool -->
   <buildtool_depend>catkin</buildtool_depend>
 
-  <!-- run-time / build dependencies -->
-  <depend>roscpp</depend>
-  <depend>tf2_ros</depend>
-  <depend>nav_msgs</depend>
+  <!-- Professor‐prescribed build dependencies: legacy TF, message_filters, gmapping, etc. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>message_filters</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>gmapping</build_depend>
 
-  <!-- external tools installed via apt (not compiled here) -->
-  <exec_depend>ira_laser_tools</exec_depend>
-  <exec_depend>laser_filters</exec_depend>
+  <!-- Runtime dependencies -->
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>message_filters</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>gmapping</exec_depend>
-
-  <export/>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>rosbag</exec_depend>
 </package>
